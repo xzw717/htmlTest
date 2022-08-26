@@ -48,7 +48,7 @@ csg &&
 zzg){
 	
 	// 卷轴星星所加的攻击
-	var jxg = zzg - csg;
+	var jxg = parseInt(zzg) - parseInt(csg);
 	/// 星星所加的攻击
 	var xxg ;
 	
@@ -57,12 +57,20 @@ zzg){
 		/// 多出15星的星之力
 	 // var ewx = xx - 15;
 	 // alert("总共加的攻击/魔攻是："+calculateXX(15));
-	 alert("ok");
+	 // alert(zbModel());
+	 // var jzg =  parseInt(calculateXX(xx));
+	 
+	 
 	} else {
-	var dd =	calculateXX(xx);
-	console.log("123",dd);
-		// alert("总共加的攻击/魔攻是："+calculateXX(xx));
-		 // alert(xx);
+	// var dd =	calculateXX(xx);
+	// console.log("123",dd);
+		// alert("总共加的攻击/魔攻是："+ calculateXX(xx));
+		/// 卷轴所加攻击
+		var jzg = parseInt(jxg) - parseInt(calculateXX(xx));
+		/// 平均每次所加攻击
+		var pjg = jzg / sj;
+		
+		 alert(pjg);
 	}
 
 } else {
@@ -93,6 +101,368 @@ function calculateXX (obj) {
 	}
 	return c
 }
+
+/// 15星之后武器所加攻击
+function zbModel (){
+	var lve = {///星之力的模型
+	/// 16星
+		sixteenStar:{
+			///等级的模型
+			ohatL:{ /// 130级
+				qsx:7,
+				fjgjL:7,
+				wqgj:6
+			},
+			ohatfL:{ /// 135级
+				qsx:7,
+				fjgjL:7,
+				wqgj:6
+			},
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:8,
+				wqgj:7
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:9,
+				wqgj:8
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:10,
+				wqgj:9
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:12,
+				wqgj:13
+			}
+		},
+		/// 17星
+		seventeenStar:{
+			///等级的模型
+			ohatL:{ /// 130级
+				qsx:7,
+				fjgjL:8,
+				wqgj:7
+			},
+			ohatfL:{ /// 135级
+				qsx:7,
+				fjgjL:7,
+				wqgj:6
+			},
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:9,
+				wqgj:8
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:10,
+				wqgj:9
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:11,
+				wqgj:9
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:13,
+				wqgj:13
+			}
+		},
+		/// 18星
+		eighteenStar:{
+			/// 等级的模型
+			ohatL:{ /// 130级
+				qsx:7,
+				fjgjL:9,
+				wqgj:7
+			},
+			ohatfL:{ /// 135级
+				qsx:7,
+				fjgjL:7,
+				wqgj:6
+			},
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:10,
+				wqgj:8
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:11,
+				wqgj:9
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:12,
+				wqgj:10
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:14,
+				wqgj:14
+			}
+		},
+		/// 19星
+		nineteenStar:{
+			///等级的模型
+			ohatL:{ /// 130级
+				qsx:7,
+				fjgjL:10,
+				wqgj:8
+			},
+			ohatfL:{ /// 135级
+				qsx:7,
+				fjgjL:7,
+				wqgj:6
+			},
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:11,
+				wqgj:9
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:12,
+				wqgj:10
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:13,
+				wqgj:11
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:15,
+				wqgj:14
+			}
+		},
+		/// 20星
+		twentyStar:{
+			///等级的模型
+			ohatL:{ /// 130级
+				qsx:7,
+				fjgjL:11,
+				wqgj:9
+			},
+			ohatfL:{ /// 135级
+				qsx:7,
+				fjgjL:7,
+				wqgj:6
+			},
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:12,
+				wqgj:10
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:13,
+				wqgj:11
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:14,
+				wqgj:12
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:16,
+				wqgj:15
+			}
+		},
+		/// 21星
+		twentyOneStar:{
+			///等级的模型
+	
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:13,
+				wqgj:11
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:14,
+				wqgj:12
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:15,
+				wqgj:13
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:17,
+				wqgj:16
+			}
+		},
+		/// 22星
+		twentyTwoStar:{
+			///等级的模型
+	
+			ohafL:{ /// 140级
+				qsx:9,
+				fjgjL:15,
+				wqgj:12
+			},
+			ohaffL:{ /// 150级
+				qsx:11,
+				fjgjL:16,
+				wqgj:13
+			},
+			ohasL:{ /// 160级
+				qsx:13,
+				fjgjL:17,
+				wqgj:14
+			},
+			thL:{ /// 200级
+				qsx:15,
+				fjgjL:19,
+				wqgj:17
+			}
+		},
+		/// 23星
+		twentyThreeStar:{
+			///等级的模型
+
+			ohafL:{ /// 140级
+				
+				fjgjL:17,
+				wqgj:30
+			},
+			ohaffL:{ /// 150级
+			
+				fjgjL:18,
+				wqgj:31
+			},
+			ohasL:{ /// 160级
+				
+				fjgjL:19,
+				wqgj:32
+			},
+			thL:{ /// 200级
+				
+				fjgjL:21,
+				wqgj:34
+			}
+		},
+		/// 24星
+		sevenFourStar:{
+			///等级的模型
+	
+			ohafL:{ /// 140级
+				
+				fjgjL:19,
+				wqgj:31
+			},
+			ohaffL:{ /// 150级
+			
+				fjgjL:20,
+				wqgj:32
+			},
+			ohasL:{ /// 160级
+				
+				fjgjL:21,
+				wqgj:33
+			},
+			thL:{ /// 200级
+			
+				fjgjL:23,
+				wqgj:35
+			}
+		},
+		/// 25星
+		twentyFiveStar:{
+			///等级的模型
+
+			ohafL:{ /// 140级
+				
+				fjgjL:21,
+				wqgj:32
+			},
+			ohaffL:{ /// 150级
+				
+				fjgjL:22,
+				wqgj:33
+			},
+			ohasL:{ /// 160级
+				
+				fjgjL:23,
+				wqgj:34
+			},
+			thL:{ /// 200级
+				
+				fjgjL:25,
+				wqgj:36
+			}
+		},
+	};
+	 
+    var fl = document.getElementById("myForm").elements.namedItem("zbfl").value;
+	var dj = parseInt( document.getElementById("myForm").elements.namedItem("level").value);
+	var a = {
+		qsx:lve.starChangeNumer().qsx,
+		gjl:fl== "武器" ? lve.starChangeNumer().wqgj : lve.starChangeNumer().fjgjL
+	};
+	
+	return a;
+}
+function starChangeNumer (){
+	var xx = parseInt(document.getElementById("myForm").elements.namedItem("stars").value);
+	switch (xx){
+		case 16:
+		return "sixteenStar";
+		break;
+		case 17:
+		return "seventeenStar";
+		break;
+		case 18:
+		return "eighteenStar";
+		break;
+		case 19:
+		return "nineteenStar";
+		break;
+		case 20:
+		return "twentyStar";
+		break;
+		case 21:
+		return "twentyOneStar";
+		break;
+		case 22:
+		return "twentyTwoStar";
+		break;
+		case 23:
+		return "twentyThreeStar";
+		break;
+		case 24:
+		return "sevenFourStar";
+		break;
+		case 25:
+		return "twentyFiveStar";
+		break;
+		
+}
+// function lvModel (obj){
+// 	var dj = parseInt( document.getElementById("myForm").elements.namedItem("level").value);
+// 	var lve = [130,135,140,150,160,200];
+// 	var  wqj ;
+// 	for (i = 0 ; i < lve.length; i ++ ):{
+		
+// 	}
+// 	switch (dj){
+// 		case 130:
+		
+// 		return {
+// 			qsx:1,
+			
+// 		};
+// 	 break;
+// 	}
+// }
 </script>
 
 </body>
