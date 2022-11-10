@@ -1,10 +1,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>小练习</title>
+	<title>CMS星之力所加攻击</title>
 </head>
 <body>
-
+	<h1>仅供娱乐</h1>
 <form id="myForm" action="">
 			装备分类:<select name="zbfl">
 	<option value="武器">武器</option>
@@ -30,7 +30,7 @@
 <button onclick="myFunction()">点我</button>
 
 <p id="demo"></p>
-
+<p>"myFunction()"</p>
 <script>
 function myFunction() {
   var fl = document.getElementById("myForm").elements.namedItem("zbfl").value;
@@ -49,28 +49,17 @@ zzg){
 // 	// 卷轴星星所加的攻击
 	var jxg = parseInt(zzg) - parseInt(csg);
 // 	/// 星星所加的攻击
-// 	var xxg ;
-	
-	
-// 	if (xx > 15) {
-// 		/// 多出15星的星之力
-// 	 // var ewx = xx - 15;
-// 	 // alert("总共加的攻击/魔攻是："+calculateXX(15));
-// 	 // alert(zbModel());
-// 	 // var jzg =  parseInt(calculateXX(xx));
-	 
-	 
-	// } else {
+
 	var dd =	calculateXX(xx);
 	// console.log("123",dd);
-		// alert("总共加的攻击/魔攻是："+ calculateXX(xx));
 // 		/// 卷轴所加攻击
 		var jzg = parseInt(jxg) - parseInt(dd);
-		// console.log("123",jzg);
+		
 // 		/// 平均每次所加攻击
 		var pjg = jzg / sj;
-		
-		 alert(pjg);
+		return dd,pjg;
+		 // alert(pjg);
+		 
 // 	}
 
 } else {
